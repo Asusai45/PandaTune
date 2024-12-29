@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991484472313",
+    "project_id": "pandatune-2136b",
+    "storage_bucket": "pandatune-2136b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991484472313:android:c857617dd1064a9ab62b28",
+        "android_client_info": {
+          "package_name": "com.adityaproj.panda_tune"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs3kdWWIOHMsLnFMTADYB9_jxk3hTAv5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
