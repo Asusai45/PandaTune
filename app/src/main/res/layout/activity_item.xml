@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".item"
-    android:background="@color/white">
+    android:background="@drawable/background">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"

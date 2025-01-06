@@ -1,5 +1,4 @@
 package com.adityaproj.panda_tune
-
 data class Data(
     val album: Album,
     val artist: Artist,
