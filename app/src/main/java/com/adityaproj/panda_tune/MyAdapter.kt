@@ -16,17 +16,22 @@ import com.squareup.picasso.Picasso
 
 class MyAdapter(
     private val content: Activity,
-    private val dataList: List<Data>
+    private var dataList: List<Data>
 ) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     private var currentMediaPlayer: MediaPlayer? = null
 
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val musicImage: ImageView = view.findViewById(R.id.musicImage)
-        val titleee: TextView = view.findViewById(R.id.titlee)
+        val title: TextView = view.findViewById(R.id.titlee)
         val play: ImageButton = view.findViewById<ImageButton>(R.id.play)
         val pause: ImageButton = view.findViewById<ImageButton>(R.id.pause)
     }
+
+      fun Setfilteredlist(dataList: List<Data>){
+          this.dataList=dataList
+          notifyDataSetChanged()
+      }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(content).inflate(R.layout.activity_item, parent, false)
@@ -36,7 +41,7 @@ class MyAdapter(
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentData = dataList[position]
 
-        holder.titleee.text = currentData.title
+        holder.title.text = currentData.title
 
         Picasso.get().load(currentData.album.cover).into(holder.musicImage)
 
